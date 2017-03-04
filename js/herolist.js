@@ -3,7 +3,7 @@ function loadJson(){
 }
  function getData()
     {
-        return ["oec2003", 25]
+        return ["assasas", 25]
     }
     function getInfo()
     {
