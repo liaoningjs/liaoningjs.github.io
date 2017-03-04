@@ -1,3 +1,3 @@
 function loadJson(){
- "<h1>123英雄榜12345</h1>"
+ document.write("<h1>This is a heading</h1>");
 }
