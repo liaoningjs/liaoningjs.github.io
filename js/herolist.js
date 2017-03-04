@@ -1,3 +1,12 @@
 function loadJson(){
-  '<h1 class="post-title">英雄榜</h1>';
+  var parent = document.getElementById(obj);
+ 
+　　　　//添加 div
+　　　　var div = document.createElement("div");
+ 
+　　　　//设置 div 属性，如 id
+　　　　div.setAttribute("id", "newDiv");
+ 
+　　　　div.innerHTML = "js 动态添加div";
+　　　　parent.appendChild(div);
 }
