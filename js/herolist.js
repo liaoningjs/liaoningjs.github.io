@@ -1,5 +1,5 @@
 function loadJson(){
-  var parent = document.getElementById("hero list");
+  var parent = document.getElementById("herolist");
 　　　　//添加 div
 　　　　var div = document.createElement("div");
 　　　　//设置 div 属性，如 id
