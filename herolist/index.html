@@ -39,11 +39,19 @@
               <div class="content_container">
                   <div class="post">
                       <h1 class="post-title">英雄榜</h1>
-                      <h1 >英雄榜12345</h1>
-                      <script>
-document.write("<h1>This is a heading</h1>");
-document.write("<p>This is a paragraph</p>");
-</script>
+                      <input type="button" onclick="getInfo()" value="test"/>
+<script type="text/javascript">
+    function getData()
+    {
+        return ["oec2003", 25]
+    }
+    function getInfo()
+    {
+        var info = getData();
+        alert("姓名：" + info[0] + "年龄：" + info[1]);
+    }
+    </script>
+                    
                       <div id="herolist" class="post-content">
                           <script language="JavaScript" src="/js/herolist.js">
                             loadJson();
