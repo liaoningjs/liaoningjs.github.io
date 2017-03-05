@@ -9,24 +9,16 @@
 
 function loadJson(){
     document.getElementById("demo").innerHTML="我的第一个 JavaScript 函数";
-   var fso, ts, s;
-   var ForReading = 1;
-   try{
-      fso = new ActiveXObject("Scripting.FileSystemObject");
-      ts = fso.OpenTextFile("/herolist/liaoningjs.json", ForReading);
-      s = ts.ReadLine();
-      var json = eval('(' + s + ')');
-      //alert(json.MyData[0].id);
-      console.log(json.MyData[0].id);
-    }
-    catch(err){
-        console.log("err");
-        throw err;
- 
-    }
-    finally{
-        console.log("wancheng");
-     ts.Close();
-     }
+    var areadata ={ 
+    province : [] 
+   
+    } 
+   function initAreaData(){ 
+   var dataroot="/herolist/liaoning.json"; 
+   $.getJSON(dataroot, function(data){ 
+   areadata.province=data.province; 
+    
+}); 
+
 }
  
