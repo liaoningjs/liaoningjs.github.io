@@ -46,7 +46,7 @@
    var ForReading = 1;
    try{
       fso = new ActiveXObject("Scripting.FileSystemObject");
-      ts = fso.OpenTextFile("/herolist/liaoningjs.json", ForReading);
+      ts = fso.OpenTextFile("liaoningjs.json", ForReading);
       s = ts.ReadLine();
       var json = eval('(' + s + ')');
       //alert(json.MyData[0].id);
